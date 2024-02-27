@@ -1,0 +1,7 @@
+{
+  "name": "as2_as1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
