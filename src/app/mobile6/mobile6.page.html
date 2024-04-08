@@ -1,16 +1,34 @@
 <ion-content>
 <ion-list>
-  <ion-item>
     <ion-label>Checkout: </ion-label>
-  </ion-item>
+    <br>
+    <ion-item>
+      <ion-label>T-shirt: </ion-label>
+  <ion-label float="right">$30.00</ion-label>
+    </ion-item>
+
   <ion-item>
-    <ion-label>T-shirt: </ion-label>
+   <ion-card> <ion-img
+  src="https://ionic-docs-demo-v7.vercel.app/assets/madison.jpg"
+></ion-img></ion-card>
   </ion-item>
+
   <ion-item>
     <ion-label>Socks: </ion-label>
+<ion-label float="right">$30.00</ion-label>
   </ion-item>
+
+  <ion-item> 
+    <ion-card><ion-img
+  src="https://ionic-docs-demo-v7.vercel.app/assets/madison.jpg"
+></ion-img></ion-card>
+  </ion-item>
+
   <ion-item>
     <ion-label id="total">total: </ion-label>
+    <ion-label float="right">$30.00</ion-label>
   </ion-item>
 </ion-list>
+
+<ion-button (click)="presentAlert()" expand="block">Proceed</ion-button>
 </ion-content>

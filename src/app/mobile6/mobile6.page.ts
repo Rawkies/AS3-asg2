@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-mobile6',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mobile6.page.scss'],
 })
 export class Mobile6Page implements OnInit {
+  constructor(private alertController: AlertController) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      message: 'Thankyou for buying on our store!',
+      buttons: ['Confirm'],
+    });
+
+    await alert.present();
+  }
 }
