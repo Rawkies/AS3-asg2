@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'mobile5',
     loadChildren: () => import('./mobile5/mobile5.module').then( m => m.Mobile5PageModule)
+  },  {
+    path: 'mobile6',
+    loadChildren: () => import('./mobile6/mobile6.module').then( m => m.Mobile6PageModule)
   },
+
 ];
 
 @NgModule({
