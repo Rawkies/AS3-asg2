@@ -1,15 +1,42 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AlertController } from '@ionic/angular';
 @Component({
   selector: 'app-mobile5',
   templateUrl: './mobile5.page.html',
   styleUrls: ['./mobile5.page.scss'],
 })
 export class Mobile5Page implements OnInit {
+  constructor(private alertController: AlertController) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
+  public actionSheetButtons = [
+    {
+      text: 'Confirm',
+      role: 'Confirm',
+      data: {
+        action: 'Confirm',
+      },
+      handler: () => {
+        this.showRentSuccessAlert();
+      },
+    },
+    {
+      text: 'Cancel',
+      role: 'cancel',
+      data: {
+        action: 'cancel',
+      },
+    },
+  ];
+
+  async showRentSuccessAlert() {
+    const alert = await this.alertController.create({
+      message: 'Your item successfully added into cart.',
+      buttons: ['Confirm'],
+    });
+
+    await alert.present();
+  }
 }
