@@ -27,10 +27,6 @@ const routes: Routes = [
     path: 'mobile5',
     loadChildren: () => import('./mobile5/mobile5.module').then( m => m.Mobile5PageModule)
   },
-  {
-    path: 'test',
-    loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
-  },
 ];
 
 @NgModule({
