@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-mobile2',
   templateUrl: './mobile2.page.html',
