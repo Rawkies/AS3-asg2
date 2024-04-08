@@ -30,6 +30,22 @@ const routes: Routes = [
     path: 'mobile6',
     loadChildren: () => import('./mobile6/mobile6.module').then( m => m.Mobile6PageModule)
   },
+  {
+    path: 'mobile7',
+    loadChildren: () => import('./mobile7/mobile7.module').then( m => m.Mobile7PageModule)
+  },
+  {
+    path: 'mobile8',
+    loadChildren: () => import('./mobile8/mobile8.module').then( m => m.Mobile8PageModule)
+  },
+  {
+    path: 'mobile9',
+    loadChildren: () => import('./mobile9/mobile9.module').then( m => m.Mobile9PageModule)
+  },
+  {
+    path: 'mobile10',
+    loadChildren: () => import('./mobile10/mobile10.module').then( m => m.Mobile10PageModule)
+  },
 
 ];
 

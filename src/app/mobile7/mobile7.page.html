@@ -1,0 +1,46 @@
+<ion-content color="light">
+  <ion-header [translucent]="true">
+    <br>
+    <ion-searchbar color="medium"></ion-searchbar>
+
+    <ion-card>
+      <ion-img src="assets/image/pants1.png"></ion-img>
+      <ion-card-content>
+        <ion-button expand="block" routerLink="/mobile8">
+          <ion-label>Jeans</ion-label>
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-img src="assets/image/pants2.png"></ion-img>
+      <ion-card-content>
+        <ion-button expand="block" routerLink="/mobile9">
+          <ion-label>Smart Casual</ion-label>
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-img src="assets/image/pants3.png"></ion-img>
+      <ion-card-content>
+        <ion-button expand="block" routerLink="/mobile10">
+          <ion-label>Cargo Pants</ion-label>
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-header>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom" color="primary">
+      <ion-tab-button tab="library" routerLink="/mobile">
+        <ion-icon name="apps"></ion-icon>
+        Product
+      </ion-tab-button>
+      <ion-tab-button tab="cart" routerLink="/mobile6">
+        <ion-icon name="cart"></ion-icon>
+        Cart
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
