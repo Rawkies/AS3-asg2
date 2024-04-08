@@ -1,0 +1,23 @@
+<ion-content color="primary">
+  <ion-header [translucent]="true">
+    <br><br><br><br>
+    <ion-card color="warning">
+      <img src="assets/image/socks3.png">
+      <ion-card-header >
+        <ion-card-title>Fruit Design</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Description: "Fruity Fun No-Show Socks" - Add a splash of fruity flair to your footwear collection with these vibrant no-show socks featuring an assortment of fruity designs. Made from lightweight, moisture-wicking fabric, these socks are perfect for keeping your feet cool and dry all day long. Whether you're hitting the gym or running errands, these fruity socks are sure to sweeten up your style.<br>
+        Color : Blue, RED, WHITE, BLACK <br>
+        Price : $20 <br>
+      </ion-card-content>
+    </ion-card>
+  
+  <br>
+    <ion-button id="open-action-sheet" alignment="center" color="light">
+      add to cart
+      <ion-icon slot="end" name="cart"></ion-icon>
+    </ion-button>
+  <ion-action-sheet trigger="open-action-sheet" header="CONFIRM ADD TO CART" [buttons]="actionSheetButtons"></ion-action-sheet>
+  </ion-header>
+  </ion-content>

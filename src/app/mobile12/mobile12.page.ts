@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 @Component({
-  selector: 'app-mobile10',
-  templateUrl: './mobile10.page.html',
-  styleUrls: ['./mobile10.page.scss'],
+  selector: 'app-mobile12',
+  templateUrl: './mobile12.page.html',
+  styleUrls: ['./mobile12.page.scss'],
 })
-export class Mobile10Page implements OnInit {
+export class Mobile12Page implements OnInit {
   constructor(private alertController: AlertController) {}
 
   ngOnInit(): void {
