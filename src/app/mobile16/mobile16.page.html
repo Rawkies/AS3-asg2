@@ -1,13 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>mobile16</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">mobile16</ion-title>
-    </ion-toolbar>
+<ion-content color="primary">
+  <ion-header [translucent]="true">
+    <br><br><br><br>
+    <ion-card color="warning">
+      <img src="assets/image/shoes1.png">
+      <ion-card-header >
+        <ion-card-title>Sneakers</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Description: "Urban Explorer Sneakers" - Step out in style with these sleek sneakers designed for urban exploration. Featuring a lightweight construction and cushioned footbed, they offer all-day comfort and support. The modern design includes subtle pops of color and a durable rubber outsole for traction on any terrain.<br>
+        Size : 39,40,41,42,43,44,45 <br>
+        Color : Blue, RED, WHITE, BLACK <br>
+        Price : $45 <br>
+      </ion-card-content>
+    </ion-card>
+  
+  <br>
+    <ion-button id="open-action-sheet" alignment="center" color="light">
+      add to cart
+      <ion-icon slot="end" name="cart"></ion-icon>
+    </ion-button>
+  <ion-action-sheet trigger="open-action-sheet" header="CONFIRM ADD TO CART" [buttons]="actionSheetButtons"></ion-action-sheet>
   </ion-header>
-</ion-content>
+  </ion-content>
