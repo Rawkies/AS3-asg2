@@ -1,0 +1,28 @@
+<ion-content color="medium">
+  <ion-header [translucent]="true">
+    <br><br><br><br>
+    <ion-card>
+      <img alt="Silhouette of mountains" src="https://img.freepik.com/premium-vector/professional-tshirt-design-vector-your-brand_745595-814.jpg" />
+      <ion-card-header>
+        <ion-card-title>VINTAGE 01</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        description: <br>
+        SIZE : S, M, L, XL <br>
+        COLOR : BLACK, WHITE, RED <br>
+        PRICE : $20 <br>
+      </ion-card-content>
+    </ion-card>
+  
+  <br>
+    <ion-button id="open-action-sheet" alignment="center">
+      add to cart
+      <ion-icon slot="end" name="cart"></ion-icon>
+    </ion-button>
+  <ion-action-sheet trigger="open-action-sheet" header="CONFIRM ADD TO CART" [buttons]="actionSheetButtons"></ion-action-sheet>
+  </ion-header>
+  </ion-content>
+  
+  
+  
+  
