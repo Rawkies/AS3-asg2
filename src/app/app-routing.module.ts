@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'mobile',
+    loadChildren: () => import('./mobile/mobile.module').then( m => m.MobilePageModule)
+  },
+  {
+    path: 'mobile2',
+    loadChildren: () => import('./mobile2/mobile2.module').then( m => m.Mobile2PageModule)
+  },
+  {
+    path: 'mobile3',
+    loadChildren: () => import('./mobile3/mobile3.module').then( m => m.Mobile3PageModule)
+  },
 ];
 
 @NgModule({
